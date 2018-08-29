@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Athena"
+license = "MIT"
+licenselink = "https://github.com/mtn/athena/blob/master/LICENSE"
+description = "A port of the athena jekyll theme to hugo"
+homepage = "https://github.com/mtn/athena/"
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Michael Noronha"
+  homepage = "https://mnoronha.com/"
+
+# If porting an existing theme
+[original]
+  name = "athena"
+  homepage = "https://broccolini.net/athena/"
+  repo = "https://github.com/broccolini/athena/"
