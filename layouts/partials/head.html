@@ -1,0 +1,23 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+  {{ if .Title }}
+    {{ .Title }} | {{ .Site.Title }}
+  {{ else }}
+    {{ .Site.Title }}
+  {{ end }}
+  </title>
+
+  <meta name="description" content="{{ if .Description }}{{- .Description -}}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+  {{ $sass := resources.Get "sass/main.scss"  }}
+  {{ $style := $sass | resources.ToCSS  }}
+
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
