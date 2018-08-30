@@ -1,6 +1,6 @@
 {{ if (or (not .Site.Params.disable_next_prev) (not (isset .Site.Params "disable_next_prev"))) }}
   <div class="col-4 sm-width-full left mr-lg-4 mt-3">
-    {{ with .Next }}
+    {{ with .Prev }}
     <a class="no-underline-hover py-1 block" href="{{ .Permalink }}">
       <span class="h5 bold">Previous</span>
       <p class="bold h3 link-primary mb-1">{{ .Title }}</p>
