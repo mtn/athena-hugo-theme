@@ -1,0 +1,18 @@
+<header class="px-2 clearfix">
+  <div class="right-lg absolute-lg right-0 top-0">
+    <ul class="mt-1 mt-lg-2 mr-2 mr-lg-3">
+      <li class="inline-block block-lg text-right ml-1 ml-lg-0">
+        <a class="italic h4 bold no-underline" href="{{ .Site.BaseURL }}/">
+          Home
+        </a>
+      </li>
+      {{ range .Site.Home.Sections }}
+      <li class="inline-block block-lg text-right ml-1 ml-lg-0">
+        <a class="italic no-underline h4" href="{{ .Section | urlize | absURL }}">
+          {{ .Section }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</header>

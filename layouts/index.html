@@ -4,17 +4,10 @@
   {{ partial "head.html" . }}
 
   <body>
+    {{ partial "header.html" . }}
 
     <div>
-
-      <header class="clearfix"> <div class="right absolute-lg right-0 top-0"> <ul class="mt-2 mr-2 mr-lg-3"> {{ range .Site.Home.Sections }}
-              <li class="inline-block block-lg text-right ml-1 ml-lg-0">
-                <a class="italic no-underline h4 font-smoothing" href="{{ .Section | urlize | absURL }}">{{ .Section }}</a>
-              </li>
-            {{ end }}
-          </ul>
-        </div>
-
+      <header class="clearfix">
         <div class="container mx-auto px-2 mt-4 mb-2 clearfix header-text">
           <h1 class="h0 inline-block py-2 mt-4 header-title">{{ .Site.Title }}</h1>
 
