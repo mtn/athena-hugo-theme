@@ -4,7 +4,7 @@
 name = "Athena"
 license = "MIT"
 licenselink = "https://github.com/mtn/athena/blob/master/LICENSE"
-description = "A port of the athena jekyll theme to hugo"
+description = "A clean and readable Hugo theme (port of https://github.com/broccolini/athena)"
 homepage = "https://github.com/mtn/athena/"
 tags = []
 features = []
