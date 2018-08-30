@@ -1,0 +1,21 @@
+{{ if (or (not .Site.Params.disable_next_prev) (not (isset .Site.Params "disable_next_prev"))) }}
+  <div class="col-4 sm-width-full left mr-lg-4 mt-3">
+    {{ with .Next }}
+    <a class="no-underline-hover py-1 block" href="{{ .Permalink }}">
+      <span class="h5 bold">Previous</span>
+      <p class="bold h3 link-primary mb-1">{{ .Title }}</p>
+      <p>{{ .Content | safeHTML | truncate 20 }}</p>
+    </a>
+    {{ end }}
+  </div>
+
+  {{ with .Next }}
+  <div class="col-4 sm-width-full left mt-3">
+    <a class="no-underline-hover py-1 block" href="{{ .Permalink }}">
+      <span class="h5 bold">Next</span>
+      <p class="bold h3 link-primary mb-1">{{ .Title }}</p>
+      <p>{{ .Content | safeHTML | truncate 20 }}</p>
+    </a>
+  </div>
+  {{ end }}
+{{ end }}
