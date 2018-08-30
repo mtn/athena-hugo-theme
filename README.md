@@ -37,3 +37,7 @@ github_username = "your-username"
 Credit for the design goes to [broccolini](https://github.com/broccolini). I really liked this theme, and wanted to bring it to a broader audience :)
 
 This was hacked together rather quickly, so there might be issues!
+
+## License
+
+Licensed under the MIT License. See the [LICENSE](https://github.com/mtn/athena-hugo-theme/blob/master/LICENSE.md) file for more details.
