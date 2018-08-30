@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  {{ partial "head.html" . }}
+  
+  <!-- font-smoothing is only applied on dark themes -->
+  <body class="font-smoothing">
+
+    {{ partial "header.html" . }}
+
+    <div>
+      <header class="clearfix">
+        <div class="container mx-auto px-2 mt-4 mb-2 clearfix header-text">
+          <h1 class="h0 inline-block py-2 mt-4 header-title">{{ .Title }}</h1>
+
+          <div class="clearfix mb-4 py-1">
+            <div class="col-1 sm-width-full border-top-thick">
+            </div>
+          </div>
+
+        </div>
+      </header>
+
+      <div class="container mx-auto px-2 py-2">
+        {{ range sort .Data.Pages "Date" "desc" }}
+          {{ partial "post_block.html" . }}
+        {{ end }}
+      </div>
+
+    </div>
+
+
+    <div class="container mx-auto px-2 py-2">
+      {{ range sort .Data.Pages "Date" "desc" }}
+        {{ partial "post_block.html" . }}
+      {{ end }}
+    </div>
+
+    {{ partial "footer.html" . }}
+
+  </body>
+
+</html>
