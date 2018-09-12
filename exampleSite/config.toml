@@ -1,7 +1,7 @@
 baseURL = "https://example.com/"
 languageCode = "en-us"
 title = "Athena Hugo Theme"
-theme = "athena"
+theme = "../.."
 
 [params]
 description = "A clean and readable Hugo theme (port of https://github.com/broccolini/athena)"
