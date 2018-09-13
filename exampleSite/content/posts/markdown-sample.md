@@ -1,7 +1,6 @@
 ---
 title: "Markdown Sample"
 date: 2018-08-28T20:29:03-07:00
-draft: true
 ---
 
 ### Markdown test document
