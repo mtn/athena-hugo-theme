@@ -3,9 +3,9 @@
 
 name = "Athena"
 license = "MIT"
-licenselink = "https://github.com/mtn/athena/blob/master/LICENSE"
+licenselink = "https://github.com/mtn/athena-hugo-theme/blob/master/LICENSE.md"
 description = "A clean and readable Hugo theme (port of https://github.com/broccolini/athena)"
-homepage = "https://github.com/mtn/athena/"
+homepage = "https://github.com/mtn/athena-hugo-theme/"
 tags = []
 features = []
 min_version = "0.41"
