@@ -1,6 +1,6 @@
 # athena
 
-A clean and readable Hugo theme (port of https://github.com/broccolini/athena).
+A clean and readable Hugo theme (port of https://github.com/broccolini/athena). Demo [here](https://themes.gohugo.io/theme/athena-hugo-theme).
 
 [![screenshot](https://raw.githubusercontent.com/mtn/athena-hugo-theme/master/images/screenshot.png)](https://raw.githubusercontent.com/mtn/athena-hugo-theme/master/images/screenshot.png)
 
